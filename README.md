@@ -1,7 +1,7 @@
 Google Reader Takeout reader
 ============================
 
-Small script to read your Google Reader Takeout extracted items and feeds.
+A simple tool to take your Google Reader data from Google Takeout and convert it into a nicely formatted list of links to browse and re-bookmark/subscribe in your new favorite service (or simply save as a backup).
 
 Usage
 -----
