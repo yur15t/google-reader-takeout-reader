@@ -10,7 +10,7 @@
 	<div id="main" class="" style="">
 		<div id="nav">
 			<div id="logo-section">
-				<a id="logo-link" href="#">Google Reader Takeout reader</a>
+				<img src="logo.png"/>
 			</div>
 			<div id="scrollable-sections-holder">
 				<div id="lhn-selectors" class="section lhn-section  ">
@@ -27,28 +27,28 @@
 					</div>
 					<div class="lhn-section-secondary">
 						<div id="star-selector" class="selector">
-							<a href="#" class="link">
+							<a href="#" class="link" onclick="getArticles('starred.json');">
 								<div class="selector-icon">
 								</div>
 								<span class="text">Starred items</span>
 							</a>
 						</div>
 						<div id="like-selector" class="selector">
-							<a href="#" class="link">
+							<a href="#" class="link" onclick="getArticles('liked.json');">
 								<div class="selector-icon">
 								</div>
 								<span class="text">Liked items</span>
 							</a>
 						</div>
 						<div id="note-selector" class="selector">
-							<a href="#" class="link">
+							<a href="#" class="link" onclick="getArticles('notes.json');">
 								<div class="selector-icon">
 								</div>								
 								<span class="text">Noted items</span>
 							</a>
 						</div>
 						<div id="shared-selector" class="selector">
-							<a href="#" class="link">
+							<a href="#" class="link" onclick="getArticles('shared.json');">
 								<div class="selector-icon">
 								</div>								
 								<span class="text">Shared items</span>
@@ -62,10 +62,22 @@
 		</div>
 		<div id="chrome">
 			<div id="chrome-viewer-container">
-				<h2 id="blogs-header">Blogs I follow</h2>
-				<ol id="blogs"></ol>
-				<h2 id="articles-header">Articles I've liked, noted, shared, or starred</h2>
-				<ol id="articles"></ol>
+				<div id="viewer-header-container">
+					<div id="viewer-header">
+					</div>
+				</div>
+				<div id="viewer-container">
+					<div id="viewer-entries-container">
+						<div id="title-and-status-holder">
+							<span id="chrome-title">Articles</span>
+						</div>
+						<div class="samedir">
+							<div id="entries" class="list">
+
+							</div>
+						</div>
+					</div>	
+				</div>	
 			</div>
 		</div>
 

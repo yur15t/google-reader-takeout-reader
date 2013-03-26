@@ -42,16 +42,23 @@ function getSubscriptionsCallback(data) {
 */
 
 function getArticles(fileName) {
+	$('#articles').html('');
 	$.getJSON(fileName, function(data) {
-		for(var i = 0; i < data.items.length; i++) {
+		data.items.length>20 ? itemMax = 20 : itemMax = data.items.length;
+		for(var i = 0; i < itemMax; i++) {
 			var item = data.items[i];
 			if (item.canonical) {
 				subitem = item.canonical;
 			}
 			else {
 				subitem = item.alternate;
-			}
-			$('#articles').append('<li><a href="' + subitem[0].href + '">' + subitem[0].href + '</a> <em>' + item.title + '</em></li>');
+			}			
+			$('#entries').append('<div class="entry"><div class="collapsed"><div class="entry-date">'
+									+ item.published.toString() + '</div><div class="entry-main"><a class="entry-original" target="_blank" href="'
+									+ subitem[0].href + '"></a><span class="entry-source-title">'
+									+ item.title +'</span><div class="entr-secondary"><h2 class="entry-title">'+''+'</h2></div>'
+								);
+
 		}
 	});
 }
