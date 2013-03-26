@@ -11,7 +11,7 @@ $(function()
 				}
 			});
 
-			getSubscriptions();
+			//getSubscriptions();
 
 			getArticles('liked.json');
 			getArticles('notes.json');
@@ -19,6 +19,7 @@ $(function()
 			getArticles('starred.json');
 		});
 
+/*
 function getSubscriptions() {
 	$.get('subscriptions.xml', getSubscriptionsCallback, 'xml');
 }
@@ -38,6 +39,7 @@ function getSubscriptionsCallback(data) {
 		$('#blogs').append('<li>' + html + '</li>');
 	});
 }
+*/
 
 function getArticles(fileName) {
 	$.getJSON(fileName, function(data) {

@@ -10,15 +10,64 @@
 
 	<p><strong>Bla bla bla.</strong></p>
 
-	<div>
-		<a href="#blogs-header">Blogs</a>
-		| <a href="#articles-header">Articles</a>
+	<div id="main" class="" style="">
+		<div id="nav">
+			<div id="scrollable-sections-holder">
+				<div id="lhn-selectors" class="section lhn-section  ">
+					<div id="lhn-selectors-minimize" class="section-button section-minimize"></div>
+					<div class="lhn-section-primary">
+						<div id="reading-list-selector" class="selector no-icon unread">
+							<a href="#" class="link">
+								<span class="text">
+									<span class="label">All items</span>
+									<span id="reading-list-unread-count" class="unread-count">(1000+)</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="lhn-section-secondary">
+						<div id="star-selector" class="selector">
+							<a href="#" class="link">
+								<div class="selector-icon">
+								</div>
+								<span class="text">Starred items</span>
+							</a>
+						</div>
+						<div id="like-selector" class="selector">
+							<a href="#" class="link">
+								<div class="selector-icon">
+								</div>
+								<span class="text">Liked items</span>
+							</a>
+						</div>
+						<div id="note-selector" class="selector">
+							<a href="#" class="link">
+								<span class="text">Noted items</span>
+							</a>
+						</div>
+						<div id="shared-selector" class="selector">
+							<a href="#" class="link">
+								<span class="text">Shared items</span>
+							</a>
+						</div>						
+					</div>
+					<div class="selectors-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="chrome">
+			<div id="chrome-viewer-container">
+				<h2 id="blogs-header">Blogs I follow</h2>
+				<ol id="blogs"></ol>
+				<h2 id="articles-header">Articles I've liked, noted, shared, or starred</h2>
+				<ol id="articles"></ol>
+			</div>
+		</div>
+
 	</div>
 
-	<h2 id="blogs-header">Blogs I follow</h2>
-	<ol id="blogs"></ol>
-	<h2 id="articles-header">Articles I've liked, noted, shared, or starred</h2>
-	<ol id="articles"></ol>
+
 
 </body>
 </html>
