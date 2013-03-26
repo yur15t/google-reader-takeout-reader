@@ -1904,7 +1904,7 @@ body::-webkit-scrollbar-corner {
     float: left;
     opacity: .4;
     filter: alpha(opacity=40);
-    background: url(/reader/ui/3660573864-lhn-sprite.png) no-repeat;
+    background: url(sprite.png) no-repeat;
 }
 #lhn-selectors .selected .selector-icon {
     opacity: 1;
@@ -1924,15 +1924,19 @@ body::-webkit-scrollbar-corner {
 }
 #lhn-selectors #like-selector .selector-icon {
     margin-top: 2px;
-    background-position: -3px -99px;
+    background-position: -43px -99px;
 }
 #lhn-selectors #note-selector .selector-icon {
     margin-top: 2px;
-    background-position: -3px -99px;
+    background-position: -63px -31px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);    
 }
 #lhn-selectors #shared-selector .selector-icon {
     margin-top: 2px;
-    background-position: -23px -99px;
+    background-position: -2px -79px;
 }
 .selector:hover, #lhn-selectors .selector:hover {
     background-color: #eee;
@@ -2363,7 +2367,7 @@ body::-webkit-scrollbar-corner {
 #logo {
     margin: 0;
     width: 138px;
-    background: url(/reader/ui/537640976-reader-logo-en.gif?hl=en) no-repeat;
+    background: url(sprite.png) no-repeat;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -2419,7 +2423,7 @@ body::-webkit-scrollbar-corner {
     float: left;
 }
 .scroll-tree .icon {
-    background: url(/reader/ui/3660573864-lhn-sprite.png) no-repeat;
+    background: url(sprite.png) no-repeat;
 }
 .scroll-tree .sub-icon {
     background-position: 0 -77px;
@@ -2487,7 +2491,7 @@ body::-webkit-scrollbar-corner {
     width: 20px;
     height: 18px;
     cursor: pointer;
-    background: url(/reader/ui/3660573864-lhn-sprite.png) no-repeat;
+    background: url(sprite.png) no-repeat;
     z-index: 2;
 }
 .scroll-tree .expanded .toggle {

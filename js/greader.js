@@ -11,14 +11,15 @@ $(function()
 				}
 			});
 
-			getSubscriptions();
+			//getSubscriptions();
 
-			getArticles('liked.json');
-			getArticles('notes.json');
-			getArticles('shared.json');
-			getArticles('starred.json');
+			//getArticles('liked.json');
+			//getArticles('notes.json');
+			//getArticles('shared.json');
+			//getArticles('starred.json');
 		});
 
+/*
 function getSubscriptions() {
 	$.get('subscriptions.xml', getSubscriptionsCallback, 'xml');
 }
@@ -38,6 +39,7 @@ function getSubscriptionsCallback(data) {
 		$('#blogs').append('<li>' + html + '</li>');
 	});
 }
+*/
 
 function getArticles(fileName) {
 	$.getJSON(fileName, function(data) {
